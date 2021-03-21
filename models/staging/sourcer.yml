@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: northwind_shop
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: orders
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: order_id
+            description: Primary key of the orders table
+            tests:
+              - unique
+              - not_null
+      - name: products
+        description: essa tabela contém informação sobre os produtos na northwind.
+      - name: shippers
+        description: essa tabela contém informação sobre os entregadores na northwind.
+      - name: employees
+        description: essa tabela contém informação sobre os funcionarios na northwind.
+      - name: customers
+        description: essa tabela contém informação sobre os clientes na northwind.
+      - name: suppliers
+        description: essa tabela contém informação sobre os fornecedores na northwind.
