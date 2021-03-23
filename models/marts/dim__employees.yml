@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim__employees
+    columns:
+      - name: employee_id
+        description: The primary key of the employee.
+        tests:
+           - unique
+           - not_null
+
