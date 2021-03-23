@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim__shippers
+    columns:
+      - name: shipper_id
+        description: The primary key of the shipper.
+        tests:
+           - unique
+           - not_null
+

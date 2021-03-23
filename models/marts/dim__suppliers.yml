@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim__suppliers
+    columns:
+      - name: supplier_sk
+        description: The primary key of the supplier.
+        tests:
+           - unique
+           - not_null
+
